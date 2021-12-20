@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      
+      function onclickFun() {
+        var userNameObj = document.getElementById("userName");
+        var userNameText = userNameObj.value;
+        var patt = /^\w{5,12}$/;
+        var userNameSpanObj = document.getElementById("userNameSpan");
+        userNameSpanObj.innerHTML = "测试用例";
+        if (patt.test(userNameText)) {
+          alert("用户名合法");
+          userNameSpanObj.innerHTML = "用户名合法";
+        } else {
+          alert("用户名非法");
+          userNameSpanObj.innerHTML = "用户名非法";
+        }
+      }
+    </script>
+</head>
+<body>
+      用户名： <input type="text" id="userName" value="测试"/>
+      <span id="userNameSpan" style="color: red;"></span>
+      <button onclick="onclickFun()">校验</button>
+</body>
+</html>

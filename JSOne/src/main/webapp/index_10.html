@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript">
+    function fun(a) {
+      alert( arguments.length );//可看参数个数
+      alert("类型：" + typeof arguments[0] + "值：" + arguments[0]);
+      alert("类型：" + typeof arguments[1] + "值：" + arguments[1]);
+      alert("类型：" + typeof arguments[2] + "值：" + arguments[2]);
+      alert("a = " + a);
+      for (var i = 0; i < arguments.length; i++){
+        alert( arguments[i] );
+      }
+      alert("无参函数 fun()");
+    }
+    fun(1,"ad",true)
+  </script>
+</head>
+<body>
+
+</body>
+</html>
