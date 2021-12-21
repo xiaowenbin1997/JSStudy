@@ -1,0 +1,24 @@
+<!--失去焦点-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function onblurFun(){
+        console.log("静态注册失去焦点");
+      }
+
+      window.onload = function (){
+        var passw = document.getElementById("password");
+        passw.onblur = function (){
+          console.log("动态失去焦点");
+        }
+      }
+    </script>
+</head>
+<body>
+      用户名：<input type="text" onblur="onblurFun()"><br/>
+      密码：<input id="password" type="text"><br/>
+</body>
+</html>
