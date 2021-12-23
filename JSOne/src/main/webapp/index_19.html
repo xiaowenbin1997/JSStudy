@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function checkAll() {
+        var habbies = document.getElementsByName("hobby");
+        // alert(habbies)
+        for (var  i = 0;i < habbies.length;i++) {
+            habbies[i].checked = true;
+        }
+      }
+
+      function checkNo() {
+        var hobbies = document.getElementsByName("hobby");
+        for (var i = 0;i < hobbies.length;i++) {
+          hobbies[i].checked = false;
+        }
+      }
+
+      function checkReverse() {
+        var hobbies = document.getElementsByName("hobby");
+        for (var i = 0;i < hobbies.length;i++) {
+          if (hobbies[i].checked == true) {
+            hobbies[i].checked = false;
+          } else {
+            hobbies[i].checked = true;
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+      兴趣爱好：
+      <input type="checkbox" name="hobby" value="cpp">C++
+      <input type="checkbox" name="hobby" value="java">Java
+      <input type="checkbox" name="hobby" value="js">JavaScript
+      </br>
+      <button onclick="checkAll()">全选</button>
+      <button onclick="checkNo()">全不选</button>
+      <button onclick="checkReverse()">反选</button>
+      </br>
+      <form action="/myWeb">
+      <input type="submit" value="提交">提交
+      </form>
+</body>
+</html>
