@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script type="text/javascript">
+        // function fun1(){
+        //   window.alert(arguments.length);
+        // }
+        // fun1();
+        // fun1(10);
+        // fun1(10,20);
+        function func2(){
+          for (var i = 0;i < arguments.length;i++) {
+            window.alert("func2第" + i + 1 + "个参数的值是" + arguments[i]);
+          }
+        }
+        func2();
+        func2(10);
+        func2("abc");
+      </script>
+</body>
+</html>

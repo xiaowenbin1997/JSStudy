@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSHigh:war">
+    <output-path>$PROJECT_DIR$/../JSHigh/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>JSHigh</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="JSHigh-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JSHigh:war exploded" />
+    </root>
+  </artifact>
+</component>

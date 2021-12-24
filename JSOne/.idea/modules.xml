@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JSHigh/JSHigh.iml" filepath="$PROJECT_DIR$/../JSHigh/JSHigh.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSOne.iml" filepath="$PROJECT_DIR$/JSOne.iml" />
     </modules>
   </component>
