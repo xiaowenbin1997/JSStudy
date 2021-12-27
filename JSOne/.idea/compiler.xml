@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JSOne" />
         <module name="JSHigh" />
+        <module name="JSON" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JSHigh" target="1.8" />
+      <module name="JSON" target="1.8" />
       <module name="JSOne" target="1.8" />
     </bytecodeTargetLevel>
   </component>
